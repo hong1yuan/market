@@ -6,8 +6,8 @@
     marketRequestBase.doAjaxDX(param,url,function(data){
         if(data.code == "0"){
             alert(data.data.userName);
-            alert("成功");
-            location.href="index.html?txt=11";//发送txt里面的内容
+            alert("成功,your are idiot");
+            // location.href="index.html?txt=11";//发送txt里面的内容
         }
     });
 //});
