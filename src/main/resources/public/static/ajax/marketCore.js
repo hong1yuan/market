@@ -40,6 +40,8 @@ var marketRequestBase = {
             //dataType:"jsonp",    //跨域json请求一定是jsonp
             //jsonp: "jsonpCallback",    //跨域请求的参数名，默认是callback
             //jsonpCallback:"success_jsonpCallback",
+            crossDomain:true,
+            xhrFields: {  withCredentials: true  },
             success: function (data) {
                 //alert(JSON.stringify( data));
                 marketCommon.vailUser(data);
