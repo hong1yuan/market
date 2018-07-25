@@ -1,0 +1,23 @@
+var marketRequest = {
+    requestRootPath: "http://127.0.0.1:8080/market",
+    // requestAPI: "api",
+    // requestVersion: "v1",
+    createUrl: function (method) {
+        return this.requestRootPath + "/"  + method;
+    },
+    getProject: function (param, callback) {
+        var url = this.createUrl("test/getProject");
+        marketRequestBase.doAjax(param, url, callback);
+    },
+    getCadition : function(param,callback){
+    	var url = this.createUrl("test/getCondition");
+    	marketRequestBase.doAjaxDX(param,url,callback);
+    }
+}
+function login(){
+	var username = $("#username").val();
+	var password = $("#password").val();
+	alert(username);
+	alert(password);
+	
+	}
