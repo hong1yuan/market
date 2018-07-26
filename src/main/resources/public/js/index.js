@@ -8,6 +8,9 @@ $(function(){
             alert(data.data.userName);
             alert("成功");
             $('#loginName').html(data.data.userName);
+
+            // location.href="index.html?txt=11";//发送txt里面的内容
+
         }
     });
 });
