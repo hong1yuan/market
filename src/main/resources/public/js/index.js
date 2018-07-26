@@ -1,4 +1,4 @@
-//$(function(){
+$(function(){
     //func(xxx)//执行函数
     alert(111);
     var param = {};
@@ -7,7 +7,7 @@
         if(data.code == "0"){
             alert(data.data.userName);
             alert("成功");
-            location.href="index.html?txt=11";//发送txt里面的内容
+            $('#loginName').html(data.data.userName);
         }
     });
-//});
+});
